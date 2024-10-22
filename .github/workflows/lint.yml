@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout the source code
         uses: actions/checkout@v4
+        with:
+           repository: Jean-BaptisteC/streetcomplete
+           ref: 'line_attachment'
+           path: ./
       - name: Run Kotlin linter
         id: ktlint-check
         uses: musichin/ktlint-check@v3.0.0
